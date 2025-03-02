@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #062cb5a6;
+    --background-light: #f4f4f4;
+    --background-dark: #333;
+    --text-light: #fff;
+    --text-dark: #222;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-light);
+    color: var(--text-dark);
+    transition: background 0.3s, color 0.3s;
+}
+
+
+header {
+    background: var(--primary-color);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(238, 230, 230);
+    font-weight: bold;
+}
+
+#image{
+    height: 100px;
+    width: 100px;
+    border-style: hidden;
+    margin-left: 45%;
+    
+    
+}
+#img{
+overflow: hidden;
+object-fit: fill;
+    height: 100px;
+    width: 100px;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.project-card {
+    background: var(--primary-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: rgb(228, 224, 224);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    border-style: dotted;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    color: white;
+}
+
+body.dark-mode {
+    background: var(--background-dark);
+    color: var(--text-light);
+}
