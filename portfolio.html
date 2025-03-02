@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio..css">
+    <script defer src="portfolio.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="darkModeToggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hey i am Pranjal sahay trying to be a web deveploper.</p>
+    </section>
+
+    <section id="photo">
+<div id="image">
+<img id="img" src="IMG_20240412_115911.jpg" alt="" srcset="">
+</div>
+
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">Project 1</div>
+        <div class="project-card">Project 2</div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <p id="formFeedback"></p>
+        </form>
+    </section>
+    
+    <button id="backToTop">⬆</button>
+    <footer>
+        <p>© 2025 My Portfolio | <span id="liveClock"></span></p>
+    </footer>
+</body>
+</html>
